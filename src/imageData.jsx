@@ -17,4 +17,22 @@ export const imageData = [
       Comando utilizado para gerar as imagens: /imagine Food delivery app, mobile app, user interface, Figma, HQ, 4K, clean UI -- q 2`
     }
   ];
+
+export const logoData = [
+    {
+      logoUrl: './src/img/react-logo.png',
+      logoNome: 'Documentação React',
+      linkLogo: 'https://legacy.reactjs.org/docs/getting-started.html'
+    },
+    {
+      logoUrl: './src/img/vite-logo.png',
+      logoNome: 'Documentação Vite',
+      linkLogo: 'https://vitejs.dev/guide/'
+    },
+    {
+      logoUrl: './src/img/github-logo.png',
+      logoNome: 'Repositório do projeto',
+      linkLogo: 'https://github.com/MurilodioPy/projeto-react'
+    }
+  ];
   

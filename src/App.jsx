@@ -4,6 +4,7 @@ import { tableTh } from "./tableData";
 // import { useState, useEffect } from 'react';
 import { useState } from 'react';
 import { imageData } from './imageData';
+import { logoData } from "./imageData";
 import logo from './img/logo.png';
 
 
@@ -92,11 +93,29 @@ const Body = () => {
   );
 };
 
+const Logos = () => {
+  return(
+    <div className="link-logo">
+      {logoData.map((data, index) => (
+        <div key={index}>
+          <a href={data.linkLogo}>
+            <img src={data.logoUrl} alt={data.logoNome}/>
+            <p>{data.logoNome}</p>
+          </a>
+            {/* adicionando texto por arquivo */}
+        </div>
+      ))}
+      
+    </div>
+  );
+};
+
 // Componente do rodapé
 const Footer = () => {
   return (
     <footer>
       <p>&copy; 2023 Meu App de UI/UX. Todos os direitos reservados.</p>
+      <Logos />
     </footer>
   );
 };

@@ -1,0 +1,221 @@
+/* App.css */
+/* Definição de cores */
+:root {
+  --primary-color: #7DB9B6;
+  --secondary-color: #f4b01b;
+  --third-color: #FF8400;
+  --text-color: #4D455D;
+}
+
+/*Variáveis globais*/
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos do cabeçalho */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 20px;
+  color: var(--third-color);
+}
+
+body {
+  background: #0e1618;
+  /* background: url('./img/back.jpg'); */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#body-site {
+  width: 70%;
+}
+
+/* Estilos do corpo */
+main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background: #F5E9CF;
+  color: var(--text-color);
+}
+
+.logoname {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logoname img {
+  width: 15%;
+  margin: 0 2.5% 0 20%;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: var(--third-color);
+}
+
+/* Estilos do rodapé */
+footer {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 10px;
+  font-size: 14px;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color);
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.ui-ux-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.ui-ux-table th {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 10px;
+  text-align: center;
+}
+
+.ui-ux-table td {
+  padding: 10px;
+  border-bottom: 1px solid var(--primary-color);
+  border-radius: 0;
+}
+
+.ui-ux-table tbody {
+  background-color: none;
+  color: var(--text-color);
+}
+
+.ui-ux-table tbody tr:hover {
+  background-color: #fff;
+}
+
+.gallery {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.gallery-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+  border: 1px solid #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+
+}
+
+.gallery-info p {
+  background-color: var(--secondary-color);
+  border-radius: 0 0 8px 8px;
+  padding: 20px;
+  margin: 0;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  width: 200%;
+}
+
+.gallery .controls {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery .controls button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  width: 140px;
+  padding: 8px 16px;
+  margin: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.gallery .controls button:hover {
+  background-color: var(--secondary-color);
+}

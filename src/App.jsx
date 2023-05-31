@@ -7,9 +7,6 @@ import { imageData } from './imageData';
 import { logoData } from "./imageData";
 import logo from './img/logo.png';
 
-
-
-
 // Componente de cabeçalho
 const Header = () => {
   return (

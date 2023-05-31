@@ -1,10 +1,10 @@
 /* App.css */
 /* Definição de cores */
 :root {
-  --primary-color: #7DB9B6;
-  --secondary-color: #f4b01b;
-  --third-color: #FF8400;
-  --text-color: #4D455D;
+  --primary-color: #2aea54;
+  --secondary-color: #2d2d2d;
+  --backmain-color: #0e1618;
+  --text-color: #fff;
 }
 
 /*Variáveis globais*/
@@ -26,11 +26,11 @@ header {
   background-color: var(--primary-color);
   text-align: center;
   padding: 20px;
-  color: var(--third-color);
+  color: var(--secondary-color);
 }
 
 body {
-  background: #0e1618;
+  background: #000;
   /* background: url('./img/back.jpg'); */
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -55,7 +55,7 @@ main {
   align-items: center;
   padding: 20px;
   text-align: center;
-  background: #F5E9CF;
+  background: var(--backmain-color);
   color: var(--text-color);
 }
 
@@ -86,7 +86,7 @@ header nav {
 }
 
 .nav-link:hover {
-  color: var(--third-color);
+  color: var(--text-color);
 }
 
 /* Estilos do rodapé */
@@ -179,7 +179,7 @@ p {
 }
 
 .ui-ux-table tbody tr:hover {
-  background-color: #fff;
+  background-color: var(--secondary-color);
 }
 
 .gallery {

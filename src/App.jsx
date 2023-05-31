@@ -5,7 +5,7 @@ import { tableTh } from "./tableData";
 import { useState } from 'react';
 import { imageData } from './imageData';
 import { logoData } from "./imageData";
-import logo from './img/logo.png';
+import logo from './img/ui-ux-logo.svg';
 
 // Componente de cabeçalho
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
     <header>
       <div className="logoname">
         <img src={logo} alt="logo uiux"/>
-        <h1> UI/UX </h1>
+        <h1> &lt;PJ-REACT/&gt; </h1>
       </div>
       <nav>
         <ul>

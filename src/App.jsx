@@ -70,13 +70,16 @@ const Gallery = () => {
   return (
     <div className="gallery">
       <div className="gallery-info">
-        <img src={imageData[currentImageIndex].imageUrl} alt={`Image ${currentImageIndex + 1}`} />
+        <img 
+        src={imageData[currentImageIndex].imageUrl} 
+        alt={`${imageData[currentImageIndex].imageDesc}`} 
+        title={`${imageData[currentImageIndex].imageDesc}`}/>
         <p>{imageData[currentImageIndex].additionalText}</p>
       </div>
 
       <div className="controls">
-        <button onClick={handlePreviousImage}>Anterior</button>
-        <button onClick={handleNextImage}>Próximo</button>
+        <button onClick={handlePreviousImage} aria-label="Imagem anterior">Anterior</button>
+        <button onClick={handleNextImage} aria-label="Próxima imagem">Próximo</button>
       </div>
     </div>
   );

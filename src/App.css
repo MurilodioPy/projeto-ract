@@ -1,7 +1,7 @@
 /* App.css */
 /* Definição de cores */
 :root {
-  --primary-color: #2aea54;
+  --primary-color: #1ed760;
   --secondary-color: #2d2d2d;
   --backmain-color: #0e1618;
   --text-color: #fff;
@@ -34,6 +34,8 @@ body {
   /* background: url('./img/back.jpg'); */
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2vw;
+  line-height: 1.4;
 }
 
 #root{
@@ -67,7 +69,7 @@ main {
 }
 
 .logoname img {
-  width: 15%;
+  width: 25%;
   margin: 0 2.5% 0 20%;
 }
 
@@ -80,8 +82,11 @@ header nav {
 
 .nav-link {
   color: #333;
+  font-size: 2vw;
+  line-height: 1.4;
   text-decoration: none;
   padding: 10px;
+  transition-duration: 1s;
   cursor: pointer;
 }
 
@@ -125,7 +130,8 @@ footer {
 
 h1 {
   margin: 0;
-  font-size: 24px;
+  font-size: 2vw;
+  line-height: 1.4;
 }
 
 nav ul {
@@ -148,10 +154,14 @@ nav ul li a {
 h2 {
   font-size: 20px;
   margin-bottom: 10px;
+  font-size: 2vw;
+  line-height: 1.4;
 }
 
 p {
   margin-bottom: 20px;
+  font-size: 2vw;
+  line-height: 1.4;
 }
 
 .ui-ux-table {
@@ -229,15 +239,33 @@ p {
 .gallery .controls button {
   background-color: var(--primary-color);
   color: #fff;
+  font-size: 2vw;
+  line-height: 1.4;
   border: none;
   border-radius: 4px;
-  height: 40px;
-  width: 140px;
+  /* height: 40px;
+  width: 140px; */
   padding: 8px 16px;
   margin: 10px 15px;
   font-size: 16px;
+  transition-duration: 0.5s;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .gallery .controls button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery .controls button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
 
 .gallery .controls button:hover {
   background-color: var(--secondary-color);

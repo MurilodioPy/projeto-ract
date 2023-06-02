@@ -228,11 +228,12 @@ p {
 .controls img {
   width: 5%;
   transition-duration: 0.5s;
+  opacity: 0.1;
   cursor: pointer;
 }
 
 .controls img:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
 }
 
 @media (max-width: 768px) {

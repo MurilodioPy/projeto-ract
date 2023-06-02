@@ -24,7 +24,7 @@ export const imageData = [
 
 export const logoData = [
     {
-      logoUrl: '../src/img/react-logo.png',
+      logoUrl: './src/img/react-logo.png',
       logoNome: 'Doc. React',
       linkLogo: 'https://legacy.reactjs.org/docs/getting-started.html'
     },
